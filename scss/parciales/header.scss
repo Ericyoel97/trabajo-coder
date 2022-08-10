@@ -1,0 +1,47 @@
+
+
+    /*header*/
+
+    .header {
+        background-color: black;
+    
+        width: 100%;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+            }
+
+      .flex {
+                display: flex;
+                color: white;
+                list-style: none;
+                border: 3px solid whitesmoke;
+                flex-direction: row;
+                justify-content: space-evenly
+                  }
+    
+
+      .flex__hijo {
+                width: 100px;
+                height: 50px;
+                border: 1px solid orange;
+            }
+    
+
+    .propiedades-texto {
+    color: black; /*para el color*/
+    font-size: 22px; /*para el tamaño*/
+    font-size: italic; /*para la fuente*/
+    font-weight: bold; /*negrita*/
+    font-family: 'Courier New', Courier, monospace; /*para poner fuentes de respaldo si es que por alguna razon no funciona la que eleginos*/
+    line-height: 1.5; /*para el interlineado*/
+    text-align: justify; /*para colocar el texto a la derecha, izquierda, centro o justificado*/
+    text-decoration: underline; /*para decorar*/
+
+}
+
+
+    .propiedades-fondo {
+        background-color:black; /*para el fonfdo de los elementos*/
+    }

@@ -1,0 +1,243 @@
+@charset "UTF-8";
+/* aca van a ir mis estilos o codigos css*/
+/*nosotros declaramos estilos aca y luego tenemos que vincularlos al html*/
+/* para resetear los estilos de las siguientes tres propiedades y asignarle el valor que yo quiera*/
+/*swlwctor universal para resetear es el que empieza con " * " seguidop de "{"*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.fondo {
+  background: #06060f;
+  background: linear-gradient(90deg, #06060f 0%, #191962 50%, #106778 100%); }
+
+.flex_cards {
+  display: flex;
+  align-items: initial;
+  flex-wrap: wrap; }
+
+.card {
+  background-color: navy;
+  color: aliceblue;
+  width: 30%;
+  height: 500px;
+  display: block;
+  border-radius: 10px;
+  margin: 32px;
+  padding: 16px;
+  transition: transform 250ms; }
+
+.card:hover {
+  transform: translateY(-20px); }
+
+.card__imagen {
+  width: 100%;
+  max-height: 400px; }
+
+.card__tituloDeLaTarjeta {
+  color: whitesmoke;
+  text-align: center;
+  margin-bottom: 16px;
+  text-transform: uppercase; }
+
+.main {
+  margin-top: 200px;
+  min-height: 100vh; }
+
+.GRIDPROD {
+  border: 3px solid black;
+  display: grid;
+  grid-template-rows: 200px;
+  grid-template-areas: "producto1 producto2 producto3"; }
+
+.gridprod-hijo1 {
+  display: flex;
+  grid-area: producto1;
+  background-color: aqua;
+  /* border: 3px solid black;*/ }
+
+.gridprod-hijo2 {
+  display: flex;
+  grid-area: producto2;
+  background-color: blueviolet; }
+
+.gridprod-hijo3 {
+  display: flex;
+  grid-area: producto3;
+  background-color: coral; }
+
+.items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem; }
+
+.item1 {
+  background-color: white;
+  width: 300px;
+  border-radius: 2rem;
+  padding: 1rem; }
+
+.item--d1 {
+  background-image: red; }
+
+.item--d2 {
+  background-image: blue; }
+
+.item--d3 {
+  background-image: green; }
+
+/*header*/
+.header {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000; }
+
+.flex {
+  display: flex;
+  color: white;
+  list-style: none;
+  border: 3px solid whitesmoke;
+  flex-direction: row;
+  justify-content: space-evenly; }
+
+.flex__hijo {
+  width: 100px;
+  height: 50px;
+  border: 1px solid orange; }
+
+.propiedades-texto {
+  color: black;
+  /*para el color*/
+  font-size: 22px;
+  /*para el tamaño*/
+  font-size: italic;
+  /*para la fuente*/
+  font-weight: bold;
+  /*negrita*/
+  font-family: 'Courier New', Courier, monospace;
+  /*para poner fuentes de respaldo si es que por alguna razon no funciona la que eleginos*/
+  line-height: 1.5;
+  /*para el interlineado*/
+  text-align: justify;
+  /*para colocar el texto a la derecha, izquierda, centro o justificado*/
+  text-decoration: underline;
+  /*para decorar*/ }
+
+.propiedades-fondo {
+  background-color: black;
+  /*para el fonfdo de los elementos*/ }
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 1rem; }
+
+.footer_flex {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  border-top: 3px solid whitesmoke;
+  gap: 1rem; }
+
+/*movil*/
+@media screen and (max-width: 599px) {
+  /*aca va el codigo que querramos crear o pisar para la vista mobile*/
+  .seccio.__titulo {
+    text-align: right;
+    color: aquamarine; }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6";
+    align-content: stretch;
+    height: auto; }
+  .GRIDPROD {
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-areas: "producto1" "producto2" "producto3"; }
+  .flex_cards {
+    display: list-item; }
+  .card {
+    background-color: navy;
+    color: aliceblue;
+    width: 60%;
+    height: 500pxpx;
+    display: block;
+    border-radius: 10px;
+    margin: 32px;
+    padding: 16px; }
+  .maps {
+    height: 300px;
+    width: 300px; }
+  .bootstrap1__video {
+    height: 200px;
+    width: 200px; }
+  .bootstrap1 {
+    background-color: red;
+    width: 270px;
+    height: 250px;
+    padding: 1rem;
+    align-items: center;
+    margin: 1rem; } }
+
+/*grid*/
+.grid {
+  border: 3px solid black;
+  padding: 1rem;
+  height: 400px;
+  display: grid;
+  /*sirve para generer columnas de dicha cuadricula*/
+  grid-template-columns: repeat(3, 1fr);
+  /*sirve para generar las filas de dicha columnas*/
+  grid-template-rows: repeat(3, 100px);
+  grid-template-areas: "img1 img2 img2" "img3 img3 img4" "img5 img6 img4";
+  /*espacio entre columnas o filas*/
+  /*grig-colum-gap // grid-row-gap*/
+  gap: 1rem; }
+
+/*estilos del elemento hijo*/
+.grid_hijo {
+  border: 1px solid orange;
+  /*por si no quiero bordes de colores pudiera redondear de la siguiente manera
+    border-radius: 10px;
+    overflow: hidden; */ }
+
+/*detalles de color de fondo para elementos hijo*/
+.grid_hijo--1 {
+  grid-area: img1;
+  background-color: aqua; }
+
+.grid_hijo--2 {
+  grid-area: img2;
+  background-color: blue; }
+
+.grid_hijo--3 {
+  grid-area: img3;
+  background-color: crimson; }
+
+.grid_hijo--4 {
+  grid-area: img4;
+  background-color: darkorchid; }
+
+.grid_hijo--5 {
+  grid-area: img5;
+  background-color: brown; }
+
+.grid_hijo--6 {
+  background-color: darkolivegreen; }
+
+.grid_hijo--6 {
+  grid-area: img6;
+  background-color: burlywood; }
+
+.grid_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }

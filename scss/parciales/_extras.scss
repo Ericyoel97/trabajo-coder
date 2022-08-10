@@ -1,0 +1,47 @@
+
+
+
+.prop-titulo {
+    color: white;
+    background-color: black;
+    font-size: 30pxpx;
+    text-align: center
+    
+   }
+
+
+
+
+
+
+.color {
+ color: white;
+ text-align: justify;
+}
+
+  
+  .bootstrap1 {
+    background-color: red;
+    width: 500px;
+    height: 400;
+    padding: 1rem;
+    align-items: center;
+    margin: 1rem;
+
+  }
+    .bootstrap1__video {
+        width: 450px;
+        height: 300px;
+        align-items: center;
+
+    }
+
+    .form-label {
+        color: white;
+    }
+
+    
+    .animacion {
+        -webkit-animation: scale-up-center 0.8s ease-in-out both;
+                animation: scale-up-center 0.8s ease-in-out both;
+    }

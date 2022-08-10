@@ -1,0 +1,16 @@
+/* aca van a ir mis estilos o codigos css*/
+/*nosotros declaramos estilos aca y luego tenemos que vincularlos al html*/
+/* para resetear los estilos de las siguientes tres propiedades y asignarle el valor que yo quiera*/
+/*swlwctor universal para resetear es el que empieza con " * " seguidop de "{"*/
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+      }
+  
+      .fondo {
+          background: rgb(6,6,15);
+  background: linear-gradient(90deg, rgba(6,6,15,1) 0%, rgba(25,25,98,1) 50%, rgba(16,103,120,1) 100%);
+      }
+  

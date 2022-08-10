@@ -1,0 +1,75 @@
+
+
+/*movil*/
+@media screen and (max-width: 599px) {
+    /*aca va el codigo que querramos crear o pisar para la vista mobile*/ 
+   .seccio.__titulo {
+        text-align: right;
+        color: aquamarine;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas:
+        "img1"
+        "img2"
+        "img3"
+        "img4"
+        "img5"
+        "img6";
+        align-content: stretch;
+        height: auto;
+
+        
+    }
+
+    .GRIDPROD {
+        border: 3px solid black;
+        display: grid;
+        grid-template-rows: 200px;
+        grid-template-areas:
+        "producto1"
+        "producto2"
+        "producto3";
+       }
+
+
+    
+
+
+.flex_cards {
+    display: list-item;
+}
+
+.card{
+
+    background-color: navy;
+    color: aliceblue;
+    width: 60%;
+    height: 500pxpx;
+    display: block;
+    border-radius: 10px;
+    margin: 32px;
+    padding: 16px
+}
+
+.maps {
+    height: 300px;
+    width: 300px;
+}
+
+.bootstrap1__video {
+    height: 200px;
+    width: 200px;
+}
+.bootstrap1 {
+    background-color: red;
+    width: 270px;
+    height: 250px;
+    padding: 1rem;
+    align-items: center;
+    margin: 1rem;
+
+  }
+}

@@ -1,0 +1,56 @@
+
+
+.GRIDPROD {
+    border: 3px solid black;
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-areas:
+    "producto1 producto2 producto3";
+    }
+    .gridprod-hijo1 {
+    display: flex;
+    grid-area: producto1;
+    background-color: aqua;
+    /* border: 3px solid black;*/
+    
+    }
+    .gridprod-hijo2 {
+    display: flex;
+    grid-area: producto2;
+    background-color: blueviolet;
+    
+    }
+    .gridprod-hijo3 {
+    display: flex;
+    grid-area: producto3;
+    background-color: coral;
+    }
+    
+
+   .items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+   }
+
+   .item1 {
+    background-color: white;
+    width: 300px;
+    border-radius: 2rem;
+    padding: 1rem;
+   }
+
+   $colores: (
+    d1: red,
+    d2: blue,
+    d3: green,
+    );
+
+    @for $i from 1 through 3 {
+        .item--d#{$i} {
+            background-image: map-get($colores, d+$i);
+        }
+        
+    }
