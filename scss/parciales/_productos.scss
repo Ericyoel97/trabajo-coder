@@ -27,30 +27,61 @@
     }
     
 
+    .productos__contenedor {
+        max-width: 1200px;
+        background-color: yellow;
+        margin: 0% auto;
+    }
+
+    .prouctos__titulo {
+        font-size: 60px;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
    .items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center ;
 
    }
 
    .item1 {
-    background-color: white;
+    background-color: #333;
+    height: 300px;
     width: 300px;
     border-radius: 2rem;
     padding: 1rem;
+    position: relative;
+    
    }
 
-   $colores: (
-    d1: red,
-    d2: blue,
+   .item__name {
+    font-size: 18px;
+    letter-spacing: 1px;
+   }
+
+   .item__image {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100px;
+    height: 100px;
+
+   }
+
+   $degradados: (
+    d1: blue,
+    d2: red,
     d3: green,
     );
 
     @for $i from 1 through 3 {
+        // .item--1, .item--2, .item--3
         .item--d#{$i} {
-            background-image: map-get($colores, d+$i);
+            background-color: map-get($degradados, d+$i); //d1, d2, d3
         }
         
     }
