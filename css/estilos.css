@@ -1,7 +1,3 @@
-/* aca van a ir mis estilos o codigos css*/
-/*nosotros declaramos estilos aca y luego tenemos que vincularlos al html*/
-/* para resetear los estilos de las siguientes tres propiedades y asignarle el valor que yo quiera*/
-/*swlwctor universal para resetear es el que empieza con " * " seguidop de "{"*/
 
   *{
       margin: 0;
@@ -16,28 +12,28 @@ background: linear-gradient(90deg, rgba(6,6,15,1) 0%, rgba(25,25,98,1) 50%, rgba
 
 
     .propiedades-texto {
-        color: black; /*para el color*/
-        font-size: 22px; /*para el tamaño*/
-        font-size: italic; /*para la fuente*/
-        font-weight: bold; /*negrita*/
-        font-family: 'Courier New', Courier, monospace; /*para poner fuentes de respaldo si es que por alguna razon no funciona la que eleginos*/
-        line-height: 1.5; /*para el interlineado*/
-        text-align: justify; /*para colocar el texto a la derecha, izquierda, centro o justificado*/
-        text-decoration: underline; /*para decorar*/
+        color: black; 
+        font-size: 22px; 
+        font-size: italic; 
+        font-weight: bold; 
+        font-family: 'Courier New', Courier, monospace; 
+        line-height: 1.5; 
+        text-align: justify; 
+        text-decoration: underline; 
 
     }
 
     
         .propiedades-fondo {
-            background-color:black; /*para el fonfdo de los elementos*/
+            background-color:black;
         }
 
         .inicio1 {
             
             background-repeat: no-repeat;
-            background-size: cover; /*para el tamaño de la imagen de fondo*/
-            background-position:  /*supongo que para la pocision*/
-            background-attachment fixed; /*efecto paralax*/
+            background-size: cover; 
+            background-position: 
+            background-attachment fixed; 
 
         }
 
@@ -175,9 +171,7 @@ background: linear-gradient(90deg, rgba(6,6,15,1) 0%, rgba(25,25,98,1) 50%, rgba
             /*estilos del elemento hijo*/
             .grid_hijo {
                 border: 1px solid orange;
-                /*por si no quiero bordes de colores pudiera redondear de la siguiente manera
-                border-radius: 10px;
-                overflow: hidden; */
+                
             }
             
             /*detalles de color de fondo para elementos hijo*/
