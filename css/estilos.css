@@ -229,6 +229,7 @@ background: linear-gradient(90deg, rgba(6,6,15,1) 0%, rgba(25,25,98,1) 50%, rgba
            }
            .gridprod-hijo1 {
             display: flex;
+            text-align: justify;
             grid-area: producto1;
             background-color: aqua;
            /* border: 3px solid black;*/
@@ -236,15 +237,23 @@ background: linear-gradient(90deg, rgba(6,6,15,1) 0%, rgba(25,25,98,1) 50%, rgba
            }
            .gridprod-hijo2 {
             display: flex;
+            text-align: justify;
             grid-area: producto2;
             background-color: blueviolet;
             
            }
            .gridprod-hijo3 {
             display: flex;
+            text-align: justify;
             grid-area: producto3;
             background-color: coral;
            }
+
+           .textoprod {
+            display: flex;
+            text-align: center;
+           }
+
 
           .bootstrap1 {
             background-color: red;
